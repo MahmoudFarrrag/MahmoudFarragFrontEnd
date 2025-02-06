@@ -21,12 +21,18 @@ html{
     overflow-x: hidden;
 }
 body{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
     overflow: hidden;   
 }
 section{
-    min-height: 100vh;
+    flex-grow: 1;
+    /* min-height: 100vh; */
+    /* flex-grow: 1;  */
     padding: 10rem 9% 2rem;
 }
 .header{
@@ -283,6 +289,7 @@ span {
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
+
 }
 
 .contact form .input-box {
@@ -320,6 +327,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    margin-top: auto;
 }
 .footer-text p {
     font-size: 1.6rem;

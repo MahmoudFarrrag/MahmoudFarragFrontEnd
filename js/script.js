@@ -61,7 +61,7 @@ ScrollReveal({
 /*==================== typed js ====================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Front end Developer' , 'Front end Developer' , 'Angular | TypeScript'],
+    strings: ['Front end Developer' , 'Front end Developer' , 'Angular | TypeScript', 'React | JavaScript' ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -169,3 +169,19 @@ particlesJS("particles-js", {
   });
 
 
+  // Get the "Read More" button and section
+  const readMoreBtn = document.getElementById('read-more-btn');
+  const readMoreSection = document.getElementById('read-more');
+
+  // Event listener for "Read More" button
+  readMoreBtn.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default action
+
+      if (readMoreSection.style.display === "none") {
+          readMoreSection.style.display = "block"; // Show the section
+          readMoreBtn.textContent = "Read Less"; // Change button text
+      } else {
+          readMoreSection.style.display = "none"; // Hide the section
+          readMoreBtn.textContent = "Read More"; // Change button text back
+      }
+  });
